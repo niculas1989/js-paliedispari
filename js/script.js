@@ -31,6 +31,10 @@ buttonGenerate.addEventListener('click', function () {
     let reWord = reverseWord(originalWord);
     resultContrElement.innerText = `La tua parola al contrario è: ${reWord}`;
 
+    if (!(originalWord)) {
+        alert('Devi inserire una parola!');
+    }
+
     //! Poniamo la condizione: se è uguale o meno
     if (originalWord === reWord) {
         palindr.innerText = 'La parola è palidroma';
