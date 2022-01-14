@@ -68,9 +68,3 @@ buttonGenerate.addEventListener('click', function () {
     }
 })
 
-
-/*
-Domanda per Marco: se avessi voluto trattare più risultati, come avrei dovuto fare?
-Nel senso: se volevo specificare se aveva vinto il computer e con quale risultato?
-*/
-
