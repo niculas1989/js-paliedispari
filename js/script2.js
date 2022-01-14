@@ -28,8 +28,14 @@ let pcRandomNumber = parseInt((getRandomNumber(1, 5)));
 //! Creazione della funzione per capire se un numero è pari o dispari
 
 function isEven(num) {
-    // fa qualcosa
+    let even = false;
+    if (num % 2 === 0) {
+        even = true;
+    }
+    return even;
 }
+
+console.log(isEven(3));
 
 //! Connessione dell'evento "click" a qualcosa di tangibile
 
