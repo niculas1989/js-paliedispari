@@ -10,4 +10,10 @@ Dichiariamo chi ha vinto.
 const number = document.getElementById('number');
 const evenOrOdd = document.getElementById('even-odd');
 
+//! Creazione della funzione per creare il numero del PC
+function getRandomNumber(min, max) {
+    max++;
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
+console.log(getRandomNumber(1, 5));
