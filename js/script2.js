@@ -27,6 +27,7 @@ let pcRandomNumber = parseInt((getRandomNumber(1, 5)));
 
 //! Creazione della funzione per capire se un numero è pari o dispari
 
+/*
 function isEven(num) {
     let even = false;
     if (num % 2 === 0) {
@@ -34,8 +35,11 @@ function isEven(num) {
     }
     return even;
 }
+*/
 
-console.log(isEven(3));
+function isEven(num) {
+    return (num % 2);
+}
 
 //! Connessione dell'evento "click" a qualcosa di tangibile
 
@@ -52,15 +56,25 @@ buttonGenerate.addEventListener('click', function () {
     const finalResult = document.getElementById('final-result');
     finalResult.innerHTML = `La somma tra i due numeri è: <strong>${sum}</strong>`;
 
-    if (evenOddChoice === )
+    let choice = 0;
+    if (evenOddChoice === 'Dispari') choice = 1;
+
+    let pariOdispari = isEven(sum);
+
+    if (choice === pariOdispari) {
+        winner.innerHTML = `Hai <strong>VINTO</strong>!`;
+    } else {
+        winner.innerHTML = `Hai <strong>PERSO</strong>!`;
+    }
 
 
-        if (isEven(sum)) {
-            // faccio cose
-        } else {
-            // faccio altre cose
-        }
-
+    /*
+    if (isEven(sum) && evenOddChoice === 'Pari') {
+        winner.innerHTML = `E' uscito <strong>PARI</strong>, ha vinto l'umano!`
+        
+    } else if (!(isEven) && evenOddChoice === 'Dispari') {
+        winner.innerHTML = `E' uscito <strong>DISPARI</strong>, ha vinto l'umano!`
+    } */
 
 
 
