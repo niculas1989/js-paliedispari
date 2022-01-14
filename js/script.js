@@ -9,14 +9,11 @@ const userWord = document.getElementById('word');
 const buttonGenerate = document.getElementById('generate');
 const resultElement = document.getElementById('result');
 const resultContrElement = document.getElementById('result-contr');
+const palindr = document.getElementById('palindr');
 
 
 
 // //! Creazione funzione per "girare" la frase
-
-
-
-
 
 function reverseWord(word) {
     let reversedWord = '';
@@ -26,10 +23,19 @@ function reverseWord(word) {
     return reversedWord;
 }
 
-let reWord = reverseWord(userWord.value);
+//! Generiamo la frase e la confrontiamo dopo che l'utente clicca il "button"
 
 buttonGenerate.addEventListener('click', function () {
-    resultElement.innerText = `La tua parola è: ${userWord.value}`;
-    let reWord = reverseWord(userWord.value);
+    let originalWord = userWord.value;
+    resultElement.innerText = `La tua parola è: ${originalWord}`;
+    let reWord = reverseWord(originalWord);
     resultContrElement.innerText = `La tua parola al contrario è: ${reWord}`;
+
+    //! Poniamo la condizione: se è uguale o meno
+    if (originalWord === reWord) {
+        palindr.innerText = 'La parola è palidroma';
+    } else {
+        palindr.innerText = 'La parola non è palidroma!';
+    }
 })
+
