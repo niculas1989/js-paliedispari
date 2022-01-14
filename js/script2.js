@@ -23,17 +23,22 @@ function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-let pcRandomNumber = (getRandomNumber(1, 5));
+let pcRandomNumber = parseInt((getRandomNumber(1, 5)));
 
 //! Connessione dell'evento "click" a qualcosa di tangibile
 
 buttonGenerate.addEventListener('click', function () {
-    let humanChoice = number.value;
+    let humanChoice = parseInt(number.value);
     let evenOddChoice = evenOrOdd.value;
-    console.log(humanChoice);
+
     resultElement.innerText = `L'utente ha scelto: ${humanChoice}`;
     resultPcNumberElement.innerText = `Il computer ha scelto: ${pcRandomNumber}`;
     humanEvenOrOddChoice.innerText = `L'utente ha scelto: ${evenOddChoice}`;
+
+    //! Aggiungiamo la somma dei due numeri
+    const sum = humanChoice + pcRandomNumber;
+    const finalResult = document.getElementById('final-result');
+    finalResult.innerHTML = `La somma tra i due numeri è: <strong>${sum}</strong>`;
 
 
 
