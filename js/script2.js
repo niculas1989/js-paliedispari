@@ -6,3 +6,8 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
 Dichiariamo chi ha vinto.
 */
+
+const number = document.getElementById('number');
+const evenOrOdd = document.getElementById('even-odd');
+
+
