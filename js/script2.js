@@ -25,6 +25,12 @@ function getRandomNumber(min, max) {
 
 let pcRandomNumber = parseInt((getRandomNumber(1, 5)));
 
+//! Creazione della funzione per capire se un numero è pari o dispari
+
+function isEven(num) {
+    // fa qualcosa
+}
+
 //! Connessione dell'evento "click" a qualcosa di tangibile
 
 buttonGenerate.addEventListener('click', function () {
