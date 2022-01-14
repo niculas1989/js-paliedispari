@@ -52,11 +52,14 @@ buttonGenerate.addEventListener('click', function () {
     const finalResult = document.getElementById('final-result');
     finalResult.innerHTML = `La somma tra i due numeri è: <strong>${sum}</strong>`;
 
-    if (isEven(sum)) {
-        // faccio cose
-    } else {
-        // faccio altre cose
-    }
+    if (evenOddChoice === )
+
+
+        if (isEven(sum)) {
+            // faccio cose
+        } else {
+            // faccio altre cose
+        }
 
 
 
