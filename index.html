@@ -23,18 +23,25 @@
         decreterà il vincitore.</h2>
 
     <label for="number">Inserisci un numero compreso tra 1 e 5:</label>
-    <input id="number" type="number" min="1" max="5">
+    <select id="number" type="number" min="1" max="5">
+        <option value="empty">--</option>
+        <option class="one" value="1">1</option>
+        <option class="two" value="2">2</option>
+        <option class="three" value="3">3</option>
+        <option class="four" value="4">4</option>
+        <option class="five" value="5">5</option>
+    </select>
     <div>
         <label for="even-odd">Seleziona pari o dispari:</label>
         <select id="even-odd">
             <option value="null">--</option>
-            <option class="even" value="minorenne">Pari</option>
-            <option class="odd" value="maggiorenne">Dispari</option>
+            <option class="even" value="pari">Pari</option>
+            <option class="odd" value="dispari">Dispari</option>
         </select>
     </div>
     <button id="generate">Clicca qui per il risultato</button>
     <p id="result"></p>
-    <p id="result-contr"></p>
+    <p id="result-pc"></p>
     <p id="winner"></p>
 
 

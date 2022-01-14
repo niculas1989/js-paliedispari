@@ -9,11 +9,30 @@ Dichiariamo chi ha vinto.
 
 const number = document.getElementById('number');
 const evenOrOdd = document.getElementById('even-odd');
+const buttonGenerate = document.getElementById('generate');
+const resultElement = document.getElementById('result');
+const resultPcNumberElement = document.getElementById('result-pc');
+const winner = document.getElementById('winner');
+const even = document.querySelector('.even');
+const odd = document.querySelector('.odd');
 
+let humanChoice = number.value;
 //! Creazione della funzione per creare il numero del PC
 function getRandomNumber(min, max) {
     max++;
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-console.log(getRandomNumber(1, 5));
+let pcRandomNumber = (getRandomNumber(1, 5));
+
+//! Connessione dell'evento "click" a qualcosa di tangibile
+
+buttonGenerate.addEventListener('click', function () {
+    console.log(humanChoice);
+    resultElement.innerText = `L'utente ha scelto: ${humanChoice}`;
+    resultPcNumberElement.innerText = `Il computer ha scelto: ${pcRandomNumber}`;
+
+
+
+})
+
