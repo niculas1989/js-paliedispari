@@ -12,11 +12,11 @@ const evenOrOdd = document.getElementById('even-odd');
 const buttonGenerate = document.getElementById('generate');
 const resultElement = document.getElementById('result');
 const resultPcNumberElement = document.getElementById('result-pc');
+const humanEvenOrOddChoice = document.getElementById('human-choice');
 const winner = document.getElementById('winner');
 const even = document.querySelector('.even');
 const odd = document.querySelector('.odd');
 
-let humanChoice = number.value;
 //! Creazione della funzione per creare il numero del PC
 function getRandomNumber(min, max) {
     max++;
@@ -28,9 +28,15 @@ let pcRandomNumber = (getRandomNumber(1, 5));
 //! Connessione dell'evento "click" a qualcosa di tangibile
 
 buttonGenerate.addEventListener('click', function () {
+    let humanChoice = number.value;
+    let evenOddChoice = evenOrOdd.value;
     console.log(humanChoice);
     resultElement.innerText = `L'utente ha scelto: ${humanChoice}`;
     resultPcNumberElement.innerText = `Il computer ha scelto: ${pcRandomNumber}`;
+    humanEvenOrOddChoice.innerText = `L'utente ha scelto: ${evenOddChoice}`;
+
+
+
 
 
 
