@@ -66,19 +66,11 @@ buttonGenerate.addEventListener('click', function () {
     } else {
         winner.innerHTML = `Hai <strong>PERSO</strong>!`;
     }
-
-
-    /*
-    if (isEven(sum) && evenOddChoice === 'Pari') {
-        winner.innerHTML = `E' uscito <strong>PARI</strong>, ha vinto l'umano!`
-        
-    } else if (!(isEven) && evenOddChoice === 'Dispari') {
-        winner.innerHTML = `E' uscito <strong>DISPARI</strong>, ha vinto l'umano!`
-    } */
-
-
-
-
-
 })
+
+
+/*
+Domanda per Marco: se avessi voluto trattare più risultati, come avrei dovuto fare?
+Nel senso: se volevo specificare se aveva vinto il computer e con quale risultato?
++/
 
